@@ -19,4 +19,19 @@ class CoordinatorFactory {
         let registrationCoordinator = RegistrationCoordinator(navigationController: navigationController)
         return registrationCoordinator
     }
+    
+    func createMainCoordinator(navigationController: UINavigationController) -> MainCoordinator {
+        let mainCoordinator = MainCoordinator(navigationController: navigationController)
+        return mainCoordinator
+    }
+    
+    func createFirstMainCoordinator(navigationController: UINavigationController) -> FirstMainCoordinator {
+        let firstMainCoordinator = FirstMainCoordinator(navigationController: navigationController)
+        return firstMainCoordinator
+    }
+    
+    func createSecondMainCoordinator(navigationController: UINavigationController) -> SecondMainCoordinator {
+        let secondMainCoordinator = SecondMainCoordinator(navigationController: navigationController)
+        return secondMainCoordinator
+    }
 }

@@ -23,8 +23,12 @@
 		01033C082C5F65380079A422 /* FlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01033C072C5F65380079A422 /* FlowController.swift */; };
 		01033C0A2C5F737C0079A422 /* CoordinatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01033C092C5F737C0079A422 /* CoordinatorFactory.swift */; };
 		01033C0C2C5F81E60079A422 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01033C0B2C5F81E60079A422 /* AppCoordinator.swift */; };
-		01033C0E2C5F88B30079A422 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01033C0D2C5F88B30079A422 /* MainViewController.swift */; };
-		019A30D52C5F975700B4ED4B /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019A30D42C5F975700B4ED4B /* MainTabBarController.swift */; };
+		01033C0E2C5F88B30079A422 /* MainFirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01033C0D2C5F88B30079A422 /* MainFirstViewController.swift */; };
+		01D5F1732C7F2F4800030FD6 /* MainSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D5F1722C7F2F4800030FD6 /* MainSecondViewController.swift */; };
+		01D5F1752C7F2FE700030FD6 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D5F1742C7F2FE700030FD6 /* MainCoordinator.swift */; };
+		01D5F1772C7F386F00030FD6 /* FirstMainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D5F1762C7F386F00030FD6 /* FirstMainCoordinator.swift */; };
+		01D5F1792C7F387A00030FD6 /* SecondMainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D5F1782C7F387A00030FD6 /* SecondMainCoordinator.swift */; };
+		01D5F17B2C7F648B00030FD6 /* NextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D5F17A2C7F648B00030FD6 /* NextViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,8 +50,12 @@
 		01033C072C5F65380079A422 /* FlowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowController.swift; sourceTree = "<group>"; };
 		01033C092C5F737C0079A422 /* CoordinatorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorFactory.swift; sourceTree = "<group>"; };
 		01033C0B2C5F81E60079A422 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
-		01033C0D2C5F88B30079A422 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		019A30D42C5F975700B4ED4B /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		01033C0D2C5F88B30079A422 /* MainFirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFirstViewController.swift; sourceTree = "<group>"; };
+		01D5F1722C7F2F4800030FD6 /* MainSecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSecondViewController.swift; sourceTree = "<group>"; };
+		01D5F1742C7F2FE700030FD6 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		01D5F1762C7F386F00030FD6 /* FirstMainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstMainCoordinator.swift; sourceTree = "<group>"; };
+		01D5F1782C7F387A00030FD6 /* SecondMainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondMainCoordinator.swift; sourceTree = "<group>"; };
+		01D5F17A2C7F648B00030FD6 /* NextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,8 +126,9 @@
 				01033BF52C5EB05B0079A422 /* EnterPasswordViewController.swift */,
 				01033BF72C5EB07C0079A422 /* EnterNameViewController.swift */,
 				01033BF92C5EB0950079A422 /* EnterBirthdayViewController.swift */,
-				01033C0D2C5F88B30079A422 /* MainViewController.swift */,
-				019A30D42C5F975700B4ED4B /* MainTabBarController.swift */,
+				01033C0D2C5F88B30079A422 /* MainFirstViewController.swift */,
+				01D5F1722C7F2F4800030FD6 /* MainSecondViewController.swift */,
+				01D5F17A2C7F648B00030FD6 /* NextViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -146,6 +155,9 @@
 			children = (
 				01033C0B2C5F81E60079A422 /* AppCoordinator.swift */,
 				01033C022C5F63260079A422 /* RegistrationCoordinator.swift */,
+				01D5F1742C7F2FE700030FD6 /* MainCoordinator.swift */,
+				01D5F1762C7F386F00030FD6 /* FirstMainCoordinator.swift */,
+				01D5F1782C7F387A00030FD6 /* SecondMainCoordinator.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -231,16 +243,20 @@
 			files = (
 				01033BF82C5EB07C0079A422 /* EnterNameViewController.swift in Sources */,
 				01033BF42C5EB03D0079A422 /* ConfirmPhoneViewController.swift in Sources */,
+				01D5F1772C7F386F00030FD6 /* FirstMainCoordinator.swift in Sources */,
 				01033BFD2C5EB3C40079A422 /* UserData.swift in Sources */,
 				01033C032C5F63260079A422 /* RegistrationCoordinator.swift in Sources */,
 				01033BD82C5EA8580079A422 /* AppDelegate.swift in Sources */,
 				01033C062C5F63EC0079A422 /* ModuleFactory.swift in Sources */,
 				01033C0C2C5F81E60079A422 /* AppCoordinator.swift in Sources */,
+				01D5F1752C7F2FE700030FD6 /* MainCoordinator.swift in Sources */,
 				01033BDA2C5EA8580079A422 /* SceneDelegate.swift in Sources */,
 				01033BFA2C5EB0950079A422 /* EnterBirthdayViewController.swift in Sources */,
-				01033C0E2C5F88B30079A422 /* MainViewController.swift in Sources */,
-				019A30D52C5F975700B4ED4B /* MainTabBarController.swift in Sources */,
+				01033C0E2C5F88B30079A422 /* MainFirstViewController.swift in Sources */,
+				01D5F1732C7F2F4800030FD6 /* MainSecondViewController.swift in Sources */,
 				01033BF62C5EB05B0079A422 /* EnterPasswordViewController.swift in Sources */,
+				01D5F17B2C7F648B00030FD6 /* NextViewController.swift in Sources */,
+				01D5F1792C7F387A00030FD6 /* SecondMainCoordinator.swift in Sources */,
 				01033BF02C5EAFB00079A422 /* EnterPhoneViewController.swift in Sources */,
 				01033C002C5F61840079A422 /* Coordinator.swift in Sources */,
 				01033C082C5F65380079A422 /* FlowController.swift in Sources */,

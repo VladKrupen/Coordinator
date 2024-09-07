@@ -47,8 +47,12 @@ class AppCoordinator: Coordinator {
     }
     
     private func showMainFlow() {
-        navigationController.setViewControllers([MainTabBarController()], animated: true)
-//        navigationController.setViewControllers([MainViewController()], animated: true)
-        navigationController.navigationBar.isHidden = true
+        let mainCoordinator = CoordinatorFactory().createMainCoordinator(navigationController: navigationController)
+        childCoordinators.append(mainCoordinator)
+        mainCoordinator.start()
+        mainCoordinator.flowCompletionHandler = { [weak self] in
+            self?.childCoordinators.removeAll()
+            self?.showRegistrationFlow()
+        }
     }
 }
